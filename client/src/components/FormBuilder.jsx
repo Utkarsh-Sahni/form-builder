@@ -56,7 +56,7 @@ export default function FormBuilder() {
       };
 
       // Call the API to save the form data
-      const response = await axios.post("https://form-builder-production.up.railway.app:8067/api/form/save-form", formData);
+      const response = await axios.post("https://form-builder-production.up.railway.app/api/form/save-form", formData);
       console.log("Form Data Saved:", response.data);
       window.alert("Form submitted successfully");
       // Redirect to the form preview page after saving
