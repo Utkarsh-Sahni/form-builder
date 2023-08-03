@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 
 
 // DB connection
-const PORT=3001;
+const PORT=process.env.PORT;
 const MONGO_URL= 'mongodb+srv://utkarsh:utkarsh@cluster0.la9faq3.mongodb.net/?retryWrites=true&w=majority'
 
 mongoose.connect(MONGO_URL,{
